@@ -1,0 +1,28 @@
+
+Phase 1
+
+goal take files out and scan them through yara giving them either a safe or dangerous flag
+
+we should have options to scan a singular file, a directory and all of its sub directorys and then
+the whole computer
+
+create a scanner that can take the files out
+
+| Step | What You’ll Build     | File             | Description                                           |
+| ---- | --------------------- | ---------------- | ----------------------------------------------------- |
+| 1  | Directory scanner     | `scanner.py`     | Recursively finds files to scan                       |
+| 2    | YARA loader + matcher | `signature.py`   | Loads `.yar` rules and applies them to files          |
+| 3    | Sample rule file      | `yara_rules.yar` | Simple dummy virus signature for testing              |
+| 4    | Hook them together    | `main.py`        | Ask for directory, scan it, apply YARA, print results |
+
+
+
+scanner:
+
+input a path
+
+output: a list of everysingle filepath in that folder and its subdirectorys
+
+
+For the yara rule set we will find a good one and that is free to use how ever we want and creddit the creator
+
