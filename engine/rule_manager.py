@@ -1,7 +1,6 @@
 import yara 
 import os 
 
-#load and compiles yara rules from folder into a yara rules object
 def load_ruleset(ruleset_path):
     rules = {}
     for file in os.listdir(ruleset_path):

@@ -1,1 +1,0 @@
-The model only works on Windows PE files!

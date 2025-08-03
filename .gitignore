@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.so
+venv/
+data/malware-data/
+*.joblib
+*.log
+.DS_Store
+
+

@@ -34,9 +34,12 @@ top_features = importances.sort_values(ascending=False).head(20)
 print("\nTop 20 Features:")
 print(top_features)
 
-plt.figure(figsize=(10, 10))
+plt.figure(figsize=(10, 6))
 sns.barplot(x=top_features.values, y=top_features.index)
 plt.title("Most usefull features in dataset")
 plt.xlabel("Importance")
 plt.tight_layout()
 plt.show()
+
+
+# Needa retrain model using the 18 key features that we use!
