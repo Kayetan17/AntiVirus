@@ -1,5 +1,6 @@
 import pefile
 
+
 def extract_static_features(filepath):
     try:
         pe = pefile.PE(filepath)
