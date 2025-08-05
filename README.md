@@ -17,6 +17,8 @@ Jackal utilizes a machine learning model that was trained off of a [malware data
 From there 18 of the most import and staticly extractable features where selected. The model was retrained with only these features using Scikit-learn, then a feature extractor was developed to extract these features from unknown PE files, allowing the model to make predictions on new input at runtime. Since the model relies on static PE features, the ML scanner only supports Windows executable formats such as .exe, .dll, .sys, and .scr.
 
 
-### YARA Signature Detection
+### Signature Detection
+
+Jackal uses YARA rules for signature-based detection, the engine scans files against a set of anti-malware YARA rules sourced from the [YARA Forge repository](https://github.com/YARAHQ/yara-forge). Unlike the Machine learning model the YARA scanner can analyze a larger range of file types, like as documents, scripts, and executables.
 
 
