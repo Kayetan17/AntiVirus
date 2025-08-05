@@ -4,16 +4,19 @@
 
 ## About the project
 
-Jackal is a light weight anti-virus engine that uses machine-learning classifier trained on PE-header features and YARA signature rules. The scanner is satic, meaning that it never opens or executes the files it analyzes. Instead it inspects static features like metadata and byte patterns which allows it to quickly and safely scan files for threats without risking running a dangerous file or requiring a sandboxed environment.
+Jackal is a light weight anti-virus engine that uses machine-learning classifier trained on PE features and YARA signature rules. The scanner is satic, meaning that it never opens or executes the files it analyzes. Instead it inspects static features like metadata and byte patterns which allows it to quickly and safely scan files for threats without risking running a dangerous file or requiring a sandboxed environment.
 
 
 ### Machine Learning Model
 
-Jackal utilizes a machine learning model that was trained off of a [malware dataset](https://www.kaggle.com/datasets/amauricio/pe-files-malwares/data) containing features extracted from PE (Portable Executable) files. To improve accuarcy and to disregard non static features the top 20 most important features were identified using feature importance analysis performed with a Random Forest classifier.
+Jackal utilizes a machine learning model that was trained off of a [malware dataset](https://www.kaggle.com/datasets/amauricio/pe-files-malwares/data) containing features extracted from PE (Portable Executable) files. To improve accuarcy and to disregard non static features the top 20 most important features were identified using feature importance analysis performed with a Random Forest classifier implemented with Scikit-learn.
 
 
 <img width="1000" height="600" alt="featureImportance" src="https://github.com/user-attachments/assets/2714da75-e1e0-4db6-b729-09431f86bbf1" />
 
-From there 18 of the most import and staticly extractable features where selected. The model was retrained using only these features, then a feature extractor was developed to extract these features from unknown PE files, allowing the model to make predictions on new input at runtime.
+From there 18 of the most import and staticly extractable features where selected. The model was retrained with only these features using Scikit-learn, then a feature extractor was developed to extract these features from unknown PE files, allowing the model to make predictions on new input at runtime. Since the model relies on static PE features, the ML scanner only supports Windows executable formats such as .exe, .dll, .sys, and .scr.
+
+
+### YARA Signature Detection
 
 
