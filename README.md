@@ -97,7 +97,7 @@ See [LICENSE](./LICENSE) for full terms.
   [YARA Forge repository](https://github.com/YARAHQ/yara-forge)
 
 - **ML Tools:** <br>
-  [Scikit-learn](https://scikit-learn.org/)
+  [Scikit-learn](https://scikit-learn.org/) <br>
   [Pandas](https://pandas.pydata.org/)
 
 - **GUI:** <br>
