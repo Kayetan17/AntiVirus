@@ -68,9 +68,9 @@ Unlike the Machine learning model the YARA scanner can analyze a larger range of
 
 **Step by step**
 
-1. git clone https://github.com/Kayetan17/static-malware-detector.git
-2. cd static-malware-detector
-3. pip install -r requirements.txt
-4. python main.py (run the gui)
+1. ```git clone https://github.com/Kayetan17/static-malware-detector.git```
+2. ```cd static-malware-detector```
+3. ```pip install -r requirements.txt```
+4. ```python main.py``` (run the gui)
 
 
