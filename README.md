@@ -88,24 +88,24 @@ See [LICENSE](./LICENSE) for full terms.
 ## Built With & Citations
 
 - **PE Malware Dataset:** <br>
-  [Malware Dataset](https://www.kaggle.com/datasets/amauricio/pe-files-malwares/data)
+  Malware Dataset https://www.kaggle.com/datasets/amauricio/pe-files-malwares/data
 
 - **Signature Scanning** <br>
-  [YARA](https://virustotal.github.io/yara/)
+  YARA https://virustotal.github.io/yara/
 
 - **YARA Rules:** <br>
-  [YARA Forge repository](https://github.com/YARAHQ/yara-forge)
+  YARA Forge repository https://github.com/YARAHQ/yara-forge
 
 - **ML Tools:** <br>
-  [Scikit-learn](https://scikit-learn.org/) <br>
-  [Pandas](https://pandas.pydata.org/)
+  Scikit-learn https://scikit-learn.org/ <br>
+  Pandas https://pandas.pydata.org/
 
 - **GUI:** <br>
-  GUI FrameWork [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) <br>
-  GUI Font [Lemon Milk](https://www.dafont.com/lemon-milk.font)
+  GUI FrameWork CustomTkinter https://github.com/TomSchimansky/CustomTkinter <br>
+  GUI Font Lemon Milk https://www.dafont.com/lemon-milk.font
 
 - **Static Feature Extraction** <br>
-  [PEfile](https://github.com/erocarrera/pefile)
+  PEfile https://github.com/erocarrera/pefile
 
 
 
