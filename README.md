@@ -58,12 +58,12 @@ Unlike the Machine learning model the YARA scanner can analyze a larger range of
 
 ### Prerequisites 
 
-Python 3.9 or newer
+**Python 3.9 or newer**
 
-YARA binary
+**YARA binary**
 
-Windows: https://github.com/VirusTotal/yara/releases or ```choco install yara```
-Mac: ```brew install yara``` (need homebrew)
-Linux Ubuntu: ```sudo apt install yara```
+* Windows: https://github.com/VirusTotal/yara/releases or ```choco install yara```
+* Mac: ```brew install yara``` (need homebrew)
+* Linux Ubuntu: ```sudo apt install yara```
 
 
