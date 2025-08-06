@@ -4,6 +4,8 @@
 
 <img width="940" height="623" alt="Screenshot 2025-08-04 at 6 51 32 PM" src="https://github.com/user-attachments/assets/c3149ce9-fe95-4a42-880e-7f6ce3955293" />
 
+
+
 ## About the project
 
 Jackal is a light weight static malware scanner that offers dual layer threat detection, it offers:
@@ -28,6 +30,7 @@ Jackal utilizes a machine learning model that was trained off of a [malware data
 
 <img width="1000" height="600" alt="featureImportance" src="https://github.com/user-attachments/assets/2714da75-e1e0-4db6-b729-09431f86bbf1" />
 
+
 From there 18 of the most important and staticly extractable features where selected. The model was retrained with only these features using Scikit-learn, then a feature extractor was developed to extract these features from unknown PE files, allowing the model to make predictions on new input at runtime. Since the model relies on static PE features, the ML scanner only supports Windows executable formats such as .exe, .dll, .sys, and .scr.
 
 
@@ -50,5 +53,17 @@ The rule set is designed to provide protection and flag many malware families su
 Unlike the Machine learning model the YARA scanner can analyze a larger range of file types like documents, scripts, and executables.
 
 
+
+## Getting started
+
+### Prerequisites 
+
+Python 3.9 or newer
+
+YARA binary
+
+Windows: https://github.com/VirusTotal/yara/releases or ```choco install yara```
+Mac: ```brew install yara``` (need homebrew)
+Linux Ubuntu: ```sudo apt install yara```
 
 
