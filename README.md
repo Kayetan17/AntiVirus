@@ -111,5 +111,5 @@ See [LICENSE](./LICENSE) for full terms.
 
 ## Contact
 
-Kayetan Protas - kayetanp@gmail.com
+Kayetan Protas - kayetanp@gmail.com <br>
 Project Link: - https://github.com/Kayetan17/static-malware-detector.git
