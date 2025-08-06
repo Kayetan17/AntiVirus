@@ -66,6 +66,8 @@ Unlike the Machine learning model the YARA scanner can analyze a larger range of
 * Mac: ```brew install yara``` (need homebrew)
 * Linux Ubuntu: ```sudo apt install yara```
 
+**Step by step**
+
 1. git clone https://github.com/Kayetan17/static-malware-detector.git
 2. cd static-malware-detector
 3. pip install -r requirements.txt
