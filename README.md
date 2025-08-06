@@ -54,7 +54,7 @@ Unlike the Machine learning model the YARA scanner can analyze a larger range of
 
 
 
-## Getting started
+## Installation
 
 ### Prerequisites 
 
@@ -65,5 +65,10 @@ Unlike the Machine learning model the YARA scanner can analyze a larger range of
 * Windows: https://github.com/VirusTotal/yara/releases or ```choco install yara```
 * Mac: ```brew install yara``` (need homebrew)
 * Linux Ubuntu: ```sudo apt install yara```
+
+1. git clone https://github.com/Kayetan17/static-malware-detector.git
+2. cd static-malware-detector
+3. pip install -r requirements.txt
+4. python main.py (run the gui)
 
 
