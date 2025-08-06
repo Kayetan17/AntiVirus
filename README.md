@@ -1,10 +1,19 @@
 # Jackal Antivirus
+
 *Machine-learning & signature-based static malware scanner*
+
 <img width="940" height="623" alt="Screenshot 2025-08-04 at 6 51 32 PM" src="https://github.com/user-attachments/assets/c3149ce9-fe95-4a42-880e-7f6ce3955293" />
 
 ## About the project
 
-Jackal is a light weight anti-virus engine that uses machine-learning classifier trained on PE features and YARA signature rules. The scanner is satic, meaning that it never opens or executes the files it analyzes. Instead it inspects static features like metadata and byte patterns to quickly and safely scan files for threats without risking running a dangerous file or requiring a sandboxed environment.
+Jackal is a light weight static malware scanner that offers dual layer threat detection, it offers:
+
+* File and Folder Scanning: Users can scan a single file or recursively scan a directory and all of its subfolders.
+* Static Analysis: Jackal never executes files it analyzes. Instead it inspects static features like metadata and byte patterns which allows it to quickly and safely scan files for threats without risking running a dangerous file or requiring a sandboxed environment
+* Machine Learning Detection: For Windows PE files, Jackal uses a trained machine learning model to identify malicious files.
+* Signature-Based Detection: Using YARA rules, Jackal can scan a wide variety of file types—including executables, documents, and scripts—for known malware signatures.
+* Threat Summary: After scanning Jackal provides a summary showing how many files were scanned, how many threats were detected by each engine, and the corresponding file paths
+* Modern GUI: GUI built in CustomTkinter that simplifies malware scanning by letting users select files or folders, choose between detection modes and view scan summaries in real-time.
 
 
 ### Machine Learning Model
@@ -34,5 +43,7 @@ The rule set is designed to provide protection and flag many malware families su
 * Miscellaneous Threats
 
 Unlike the Machine learning model the YARA scanner can analyze a larger range of file types like documents, scripts, and executables.
+
+
 
 
