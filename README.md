@@ -74,3 +74,42 @@ Unlike the Machine learning model the YARA scanner can analyze a larger range of
 4. ```python main.py``` (run the gui)
 
 
+
+## License
+
+This project is licensed under the **GPLv3 License**.
+
+YARA rules used by this project were sourced from the [YARA Forge project](https://github.com/YARAHQ/yara-forge) and fall under the GPLv3 license. As such, this project as a whole is also distributed under GPLv3.
+
+See [LICENSE](./LICENSE) for full terms.
+
+
+
+## Built With & Citations
+
+- **PE Malware Dataset:**  
+  [Malware Dataset](https://www.kaggle.com/datasets/amauricio/pe-files-malwares/data)
+
+- **Signature Scanning**
+  [YARA](https://virustotal.github.io/yara/)
+
+- **YARA Rules:**  
+  [YARA Forge repository](https://github.com/YARAHQ/yara-forge)
+
+- **ML Tools:**  
+  [Scikit-learn](https://scikit-learn.org/)
+  [Pandas](https://pandas.pydata.org/)
+
+- **GUI:**  
+  GUI FrameWork [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
+  GUI Font [Lemon Milk](https://www.dafont.com/lemon-milk.font)
+
+- **Static Feature Extraction**
+  [PEfile](https://github.com/erocarrera/pefile)
+
+
+
+## Contact
+
+Kayetan Protas - kayetanp@gmail.com
+Project Link: - https://github.com/Kayetan17/static-malware-detector.git
